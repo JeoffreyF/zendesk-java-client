@@ -1,0 +1,16 @@
+Zendesk zd = new Zendesk.Builder("https://babolat.zendesk.com")
+        .setUsername("...")
+        .setToken("...") // or .setPassword("...")
+        .build();
+        
+       curl https://babolat.zendesk.com/api/v2/user_fields.json \
+  -v -u jfavraud@babolat.com:Babolat2016
+  
+Status: 200 OK
+{
+  "user_field": {
+    "url": "https://company.zendesk.com/api/v2/user_fields/7.json",
+    "id": 3060793489,
+    "name": "text",
+  }
+}
